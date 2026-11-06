@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4e4ba;
+}
+
+.container {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 40vh;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+form {
+    margin: 1.5rem 0 1rem 0;
+}
+
+/* Amount section */
+
+.amount p,
+.from p,
+.to p {
+    margin-bottom: 0.4rem;
+}
+
+form input {
+    width: 100%;
+    border: 1px solid lightgray;
+    outline: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    height: 2.8rem;
+    padding-left: 0.5rem;
+}
+
+/* Currency dropdown section */
+
+.dropdown {
+    display: grid;
+    grid-template-columns: 1fr 2rem 1fr;
+    align-items: center;
+    column-gap: 0.5rem;
+    row-gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.select-container img {
+    max-width: 1.7rem;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+    padding: 0.25rem;
+}
+
+.select-container select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    background: transparent;
+}
+
+/* Swap icon */
+
+.swap-icon {
+    justify-self: center;
+    margin-top: 1.2rem;
+}
+
+/* Exchange rate message */
+
+.msg {
+    grid-column: 1 / -1;
+    font-size: 0.85rem;
+}
+
+/* Button */
+
+form button {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 2.8rem;
+    border: none;
+    outline: none;
+    border-radius: 0.6rem;
+    background-color: #a34191;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #8e357e;
+}
